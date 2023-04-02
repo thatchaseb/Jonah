@@ -1,9 +1,12 @@
 import React from 'react';
 import { Element } from 'react-scroll'
+import { SocialLinks, JonahBio } from '../../edits';
+
+import Headshot from '../media/Gallery/4.jpg'
 
 import RM from "../media/Resume.pdf"
 import RMJPG from "../media/Resume.jpg"
-
+import TikTokIcon from "../media/TikTok.png"
 import resumePic from "../media/ResumePicture.jpg"
 
 const Resume = () => {
@@ -11,43 +14,49 @@ const Resume = () => {
 	<Element 
 		name="resume" 
 		className="
-			bg-no-repeat bg-cover bg-resumeBackground 
+			bg-no-repeat bg-cover bg-gradient-to-tr from-lightMid to-mid
+			object-right
 			pb-8
 			mb-0
-			relative 
+			
 			sm:bg-[left_top_-2rem] bg-[left_top_0rem] 
-			grid grid-cols-2
+			pt-20
 		"
 	>
 		<div>
 			<div className="
-				font-Merriweather 
-				text-[3rem] lg:text-[4rem] 
-				lg:ml-20 ml-4
-				md:mt-28 
+				mx-20
 				text-white
-				
 			">
-				<div>
-					Resume
+				<div className='flex
+				justify-center'>
+					<div className='bg-gradient-to-tr from-gray-100 to-gray-200'>
+						<img src={Headshot} alt="Headshot" className="bg-gradient-to-tr from-white to-gray-100 p-2 w-60 h-60  object-cover"/>
+						<div className='font-ShadowsIntoLight text-mid text-[2rem] text-center'>
+							About Me
+						</div>
+					</div>
+
 				</div>
 				<div 
 					className="
 						drop-shadow-[0_2px_5px_rgba(0,0,0,0.5)]
 				 		font-bold  
 				 		text-3xl lg:text-5xl md:text-4xl 
+						flex justify-center mt-8
 				 	"
 				 >
+					
 					<a  
-						href={"https://www.facebook.com/sarah.williams.144734"} 
-						style={{color:"#4267B2"}} 
+						href={SocialLinks.Twitter} 
+						style={{color:"#00acee"}} 
 						target="_blank" 
 						rel="noreferrer"
 					>	
-						<i className="facebook icon" style={{color:"#4267B2"}}></i>
+						<i className="twitter icon" style={{color:"#00acee"}}></i>
 					</a>                 
 					<a  
-						href={"https://www.instagram.com/sarahbrackett1993/"} 
+						href={SocialLinks.Instagram} 
 						style={{color:"#458eff"}} 
 						target="_blank" 
 						rel="noreferrer"
@@ -55,7 +64,7 @@ const Resume = () => {
 						<i className="instagram icon" style={{color:"#458eff"}}></i>
 					</a>                
 					<a  
-						href={"https://www.youtube.com/@jitterbugdancer"} 
+						href={SocialLinks.YouTube} 
 						style={{color:"#FF0000"}} 
 						target="_blank" 
 						rel="noreferrer"
@@ -63,13 +72,23 @@ const Resume = () => {
 						<i className="youtube icon" style={{color:"#FF0000"}}></i>
 					</a>
 				</div>
+				<div className='
+					text-[1.5rem] lg:text-[2.5rem]
+					mt-12 
+				'>
+					{JonahBio}
+				</div>
+				
 			</div>
 		</div>
 	<a 
 		href={RM} 
 		className="
 			select-none 
-			lg:mt-44 lg:mr-24 mt-32 mb-8 mr-6 
+			mx-10
+			lg:mr-24 
+			md:mt-28 mt-12 
+			mb-8 mr-6 
 
 			border-8 border-sec-500 rounded-md 
 			bg-black 

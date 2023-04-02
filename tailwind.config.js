@@ -6,11 +6,12 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				prim:'#8E004F',
-				sec:'#E3E2CA',
-				navy:'#151F3D',
-				navyClear:'#151F3D3F',
-				offBlue: '#E5FAFD'
+				mid:'#5A3508',
+				darkMid:'#593407',
+				Darker:'#301700',
+				navyClear:'#3017003F',
+				lightMid: '#DBCCAF',
+				Lighter: '#D6CDB9'
 			},
 			backgroundImage:theme => ({
 				'resumeBackground': "url('/src/components/media/resumeBackground.jpg')",
@@ -20,6 +21,7 @@ module.exports = {
 		},
 			fontFamily: {
 				'Merriweather': ['"Merriweather Sans"','sans-serif'],
+				'ShadowsIntoLight': ['"Shadows Into Light"', 'cursive']
 		}          
 	},
 	plugins: [],

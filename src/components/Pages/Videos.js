@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-
+import { VideoLinks } from '../../edits';
 import { Element } from 'react-scroll'
 import { Carousel } from 'react-responsive-carousel';
 
@@ -28,39 +28,26 @@ class Videos extends React.Component {
         this.state = {
             video1:  {
               "title": "Video Url 1",
-              "url": "https://www.youtube.com/embed/aQxBamN4B6s",
+              "url": VideoLinks.TheatreReel,
               "id": 1
             },
             video2: {
               "title": "Video Url 2",
-              "url": "https://www.youtube.com/embed/CYOoMuM8UfM",
+              "url": VideoLinks.FightReel,
               "id": 2
             },
             video3: {
               "title": "Video Url 3",
-              "url": "https://www.youtube.com/embed/rP7sCMKSb1I",
+              "url": VideoLinks.FilmReel,
               "id": 3
             },
-            video4: {
-              "title": "Video Url 4",
-              "url": "https://www.youtube.com/embed/ZFyhtnPYxQo",
-              "id": 4
-            },
-            video5: {
-              "title": "Video Url 5",
-              "url": "https://www.youtube.com/embed/s0nfUCqLemU",
-              "id": 5
-            }
+           
         };
     }
     
     render () {
-        if (!this.state.video1 || !this.state.video2 || !this.state.video3 || !this.state.video4) {
-          return <div>Loading..</div>;
-        }
-
         return (
-            <Element name="Reels" className="mt-12 mx-20 md:mx-32 lg:mx-48 xl:mx-64">
+            <Element name="Reels" className="pt-12 px-20 pd:px-32 lg:px-48 xl:px-64 bg-gradient-to-tr from-lightMid to-mid pb-12">
                 <div 
                     className="
                         font-Merriweather 
@@ -75,8 +62,6 @@ class Videos extends React.Component {
                     <YoutubeSlide key="youtube-1" url={this.state.video1.url} />
                     <YoutubeSlide key="youtube-2" url={this.state.video2.url} />
                     <YoutubeSlide key="youtube-3" url={this.state.video3.url} />
-                    <YoutubeSlide key="youtube-4" url={this.state.video4.url} />
-                    <YoutubeSlide key="youtube-5" url={this.state.video5.url} />
                 </Carousel>
             </Element>
         );

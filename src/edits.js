@@ -1,0 +1,85 @@
+//Gallery Photos
+
+import pic1 from "./components/media/Gallery/1.jpg"
+import pic2 from "./components/media/Gallery/2.jpg"
+import pic3 from "./components/media/Gallery/3.jpg"
+import pic4 from "./components/media/Gallery/4.jpg"
+import pic5 from "./components/media/Gallery/5.jpg"
+import pic6 from "./components/media/Gallery/6.jpg"
+import pic7 from "./components/media/Gallery/7.jpg"
+import pic8 from "./components/media/Gallery/8.jpg"
+import pic9 from "./components/media/Gallery/9.jpg"
+import pic10 from "./components/media/Gallery/10.jpg"
+import pic11 from "./components/media/Gallery/11.jpg"
+import pic12 from "./components/media/Gallery/12.jpg"
+import pic13 from "./components/media/Gallery/13.jpg"
+
+export const galleryPhotos = [
+  pic1,
+  pic2,
+  pic3,
+  pic4,
+  pic5,
+  pic6,
+  pic7,
+  pic8,
+  pic9,
+  pic10,
+  pic11,
+  pic12,
+  pic13,
+]
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+export const VideoLinks = {
+  TheatreReel: "https://youtu.be/fqILpJvVivQ",
+  FilmReel: "https://youtu.be/h4wY0rwXaU4",
+  FightReel: "https://youtu.be/zXB8O5RJmXk", 
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+export const SocialLinks = {
+  YouTube: "https://www.youtube.com/@jonahtyharmon/featured",
+  Instagram: "https://www.instagram.com/jonahtyharmon/", 
+  TikTok: "https://www.tiktok.com/@jonahtyharmon?is_from_webapp=1&sender_device=pc", 
+  Twitter: "https://twitter.com/jonahtyharmon",
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+export const Music = [
+//-- Instructions:
+//-- You can add or remove songs... just copy and paste the  { },  and then edit the quotes inside
+//-- Make sure new { }, songs are inside the [ ] 
+
+//---Main Video---//
+// Only this gets a Music Video //
+  {
+    Name: "Roanoke",
+    MusicVideo: "https://youtu.be/W8aZ28z5vPY",
+    Spotify: "https://open.spotify.com/track/1LP18e6wTIdgWmZiwwN7bA?si=103f6b5dd8c9423f",
+    AppleMusic: "https://music.apple.com/us/album/roanoke/1645560676?i=1645560677" 
+  },
+//----------------//
+
+  {
+    Name: "Just Look at Me",
+    Spotify: "https://open.spotify.com/track/6O6SrtA8UaEi8NOzhDwNJi?si=188b6f3cade94662",
+    AppleMusic: "https://music.apple.com/us/album/just-look-at-me/1653272229?i=1653272230"
+  },
+
+]
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+export const JonahBio = `Jonah Harmon is from Lawrenceville, GA with a Bachelors of Arts in Theatre and a minor in Film Studies from Florida State University. He is an actor, musician, and filmmaker currently based in Tallahassee, FL.`
