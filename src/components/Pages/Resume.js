@@ -6,8 +6,6 @@ import Headshot from '../media/Gallery/4.jpg'
 
 import RM from "../media/Resume.pdf"
 import RMJPG from "../media/Resume.jpg"
-import TikTokIcon from "../media/TikTok.png"
-import resumePic from "../media/ResumePicture.jpg"
 
 const Resume = () => {
 	return (
@@ -19,25 +17,31 @@ const Resume = () => {
 			pb-8
 			mb-0
 			
-			sm:bg-[left_top_-2rem] bg-[left_top_0rem] 
 			pt-20
 		"
 	>
 		<div>
 			<div className="
-				mx-20
+				sm:mx-20
 				text-white
 			">
-				<div className='flex
+				<div // Polaroid 
+				className='flex
 				justify-center'>
-					<div className='bg-gradient-to-tr from-gray-100 to-gray-200'>
-						<img src={Headshot} alt="Headshot" className="bg-gradient-to-tr from-white to-gray-100 p-2 w-60 h-60  object-cover"/>
-						<div className='font-ShadowsIntoLight text-mid text-[2rem] text-center'>
+					<div className='rotate-2  bg-gradient-to-tr from-gray-100 to-gray-200'>
+
+						<div // Blue Button
+							className='rotate-45 h-8 w-8 border-2 border-solid border-x-blue-800 border-t-blue-800 border-b-blue-900 bg-blue-600 rounded-[50%] absolute left-1/2 top-[-15px]'>
+							<div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
+						</div>
+						
+						<img src={Headshot} alt="Headshot" className="bg-gradient-to-tr from-white to-gray-100 p-2 w-80 h-80  object-cover"/>
+						<div className='font-ShadowsIntoLight text-mid text-[3rem] text-center'>
 							About Me
 						</div>
 					</div>
-
 				</div>
+
 				<div 
 					className="
 						drop-shadow-[0_2px_5px_rgba(0,0,0,0.5)]
@@ -73,50 +77,81 @@ const Resume = () => {
 					</a>
 				</div>
 				<div className='
-					text-[1.5rem] lg:text-[2.5rem]
-					mt-12 
+					text-[1.5rem] lg:text-[2.5rem] relative rotate-1
+					my-12 p-8 bg-slate-100 text-Darker border-4 border-solid border-t-slate-200 border-l-slate-200 border-b-slate-300 border-r-slate-300
 				'>
-					{JonahBio}
+					<div // Green Button
+						 className='rotate-45 h-8 w-8 border-2 border-solid border-x-green-800 border-t-green-800 border-b-green-900 bg-green-600 rounded-[50%] absolute left-1/2 top-[-15px]'>
+						<div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
+					</div>
+
+					<span className='text-black text-3xl pr-1' >Jonah Harmon</span> {JonahBio}
 				</div>
 				
 			</div>
 		</div>
-	<a 
-		href={RM} 
-		className="
-			select-none 
-			mx-10
-			lg:mr-24 
-			md:mt-28 mt-12 
-			mb-8 mr-6 
+		<div className='flex justify-center relitive'>
+			
+		<a 
+			href={RM} 
+			className="
+				select-none 
+				flex 
+				justify-center
+				w-3/4
+				border-8 border-sec-500 rounded-md 
+				bg-black 
+				mb-16
+				relative
+				
+			" 
+			target="_blank" 
+			rel="noreferrer"
+		>
+				<div // Yellow Button
+						className='rotate-45 h-8 w-8 border-2 border-solid border-x-yellow-800 border-t-yellow-800 border-b-yellow-900 bg-yellow-600 rounded-[50%] absolute left-[10%] z-10 top-[-20px]'>
+					<div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
+				</div>
 
-			border-8 border-sec-500 rounded-md 
-			bg-black 
-		" 
-		target="_blank" 
-		rel="noreferrer"
-	>
-		<img src={RMJPG} alt="About" className='select-none hover:opacity-75 hover:cursor-pointer duration-300 delay-50' />
-	</a>
-	<div>
-		
+				<div // yellow Button
+						className='rotate-45 h-8 w-8 border-2 border-solid border-x-yellow-800 border-t-yellow-800 border-b-yellow-900 bg-yellow-600 rounded-[50%] absolute right-[15%] z-10 top-[-18px]'>
+					<div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
+				</div>
+
+			<img 
+			src={RMJPG} 
+			alt="About" 
+			className='
+				select-none 
+				hover:opacity-75 
+				hover:cursor-pointer 
+				duration-300 
+				delay-50
+				w-full
+				' 
+			/>
+		</a>
 	</div>
+		
+	<div className='mb-32 flex justify-center'>
 		<a href={RM} className="
-			bg-gray-100 		hover:bg-navy
+			bg-gray-100 		
 			font-Merriweather 
-			text-navy				hover:text-gray-200 
+			text-navy				hover:text-mid 
 			border-4	border-gray-100
 			lg:text-2xl
-			mb-12		mr-6 
+			mb-32
+
 			px-5		py-3 		
 			rounded 
-			hover:bg-main 
+			hover:bg-lightMid 
 			cursor-pointer 
 			transition		ease-out		duration-300		delay-50 
 			md:w-72		lg:w-96 
 			" target="_blank" rel="noreferrer">
 			View and Download Resume
 		</a>
+	</div>
 		
 	</Element>
 	);

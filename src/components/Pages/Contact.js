@@ -1,7 +1,7 @@
  import React, { useRef } from 'react';
 
 import { Element } from 'react-scroll';
-
+import Headshot from '../media/Gallery/4.jpg'
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -28,7 +28,19 @@ const Contact = () => {
         text-navy
       "
     >
-      Contact
+          <div //Polaroid
+          	  className='flex justify-center rotate-3'>
+			    	<div className='bg-gradient-to-tr relative from-gray-100 to-gray-200'>
+ 	        	  <div // blue Button
+							    className='rotate-45 h-8 w-8 border-2 border-solid border-x-blue-800 border-t-blue-800 border-b-blue-900 bg-blue-600 rounded-[50%] absolute left-1/2 top-[-15px]'>
+						    <div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
+				  	  </div>
+				  	  <img src={Headshot} alt="Headshot" className="bg-gradient-to-tr from-white to-gray-100 p-2 w-80 h-80  object-cover"/>
+				  	  <div className='font-ShadowsIntoLight text-mid text-[3rem] text-center'>
+						    Contact Me
+				  	  </div>
+			    	</div>
+			  	</div>
     </div>
     <form id="contact-form" ref={form} onSubmit={handleSubmit}>
       <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
