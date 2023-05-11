@@ -5,11 +5,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import { useMediaQuery } from 'react-responsive';
 
-
-
-
-import Headshot from '../media/Gallery/4.jpg'
 import { galleryPhotos } from '../../edits';
+import { PoleroidHeaders } from '../../edits';
 
 
 const Media = () => {
@@ -101,7 +98,7 @@ const Media = () => {
 							    className='rotate-45 h-8 w-8 border-2 border-solid border-x-yellow-800 border-t-yellow-800 border-b-yellow-900 bg-yellow-600 rounded-[50%] absolute left-1/2 top-[-15px]'>
 						    <div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
 				  	  </div>
-				  	  <img src={Headshot} alt="Headshot" className="bg-gradient-to-tr from-white to-gray-100 p-2 w-80 h-80  object-cover"/>
+				  	  <img src={PoleroidHeaders[1]} alt="Headshot" className="bg-gradient-to-tr from-white to-gray-100 p-2 w-80 h-80  object-cover"/>
 				  	  <div className='font-ShadowsIntoLight text-mid text-[3rem] text-center'>
 						    Gallery
 				  	  </div>

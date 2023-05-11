@@ -14,6 +14,20 @@ import pic11 from "./components/media/Gallery/11.jpg"
 import pic12 from "./components/media/Gallery/12.jpg"
 import pic13 from "./components/media/Gallery/13.jpg"
 
+//Poleroid Headers
+
+//Crop them to be 300 pixels by 300 pixels
+//Captitalization matters for both name and extention
+//You only need to change the Name after ./components/media/
+
+//                                This Part \/
+import AboutPic from "./components/media/AboutPic.jpg"
+import GalleryPic from "./components/media/GalleryPic.jpg"
+import MusicPic from "./components/media/MusicPic.jpg"
+import VideoPic from "./components/media/VideoPic.jpg"
+import ContactPic from "./components/media/ContactPic.jpg"
+
+
 export const galleryPhotos = [
   pic1,
   pic2,
@@ -33,10 +47,10 @@ export const galleryPhotos = [
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-export const resumePic = pic1;
-export const galleryPic = pic1;
-export const videoPic = pic1;
-export const contactPic = pic1;
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -93,3 +107,13 @@ export const Music = [
 // Do not include your name it will be added automatically
 
 export const JonahBio = `is from Lawrenceville, GA with a Bachelors of Arts in Theatre and a minor in Film Studies from Florida State University. He is an actor, musician, and filmmaker currently based in Tallahassee, FL.`
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+export const PoleroidHeaders = [
+  AboutPic,
+  GalleryPic,
+  MusicPic,
+  VideoPic,
+  ContactPic,
+]

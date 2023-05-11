@@ -77,7 +77,7 @@ const Resume = () => {
 					</a>
 				</div>
 				<div className='
-					text-[1.5rem] lg:text-[2.5rem] relative rotate-1
+					text-[1.5rem] lg:text-3xl relative rotate-1 md:mx-20 lg:mx-64 lg:my-32 mx-4
 					my-12 p-8 bg-slate-100 text-Darker border-4 border-solid border-t-slate-200 border-l-slate-200 border-b-slate-300 border-r-slate-300
 				'>
 					<div // Green Button
@@ -85,7 +85,7 @@ const Resume = () => {
 						<div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
 					</div>
 
-					<span className='text-black text-3xl pr-1' >Jonah Harmon</span> {JonahBio}
+					<span className='text-black text-3xl lg:text-[2.5rem] pr-1' >Jonah Harmon</span> {JonahBio}
 				</div>
 				
 			</div>
