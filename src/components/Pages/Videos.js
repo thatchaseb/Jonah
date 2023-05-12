@@ -8,6 +8,7 @@ import { PoleroidHeaders } from '../../edits';
 
 
 
+
 const YoutubeSlide = ({ url, isSelected }) => (
     <ReactPlayer width="100%" url={url}  />
 );
@@ -25,28 +26,6 @@ const customRenderThumb = (children) =>
 
 class Videos extends React.Component {
 
-  constructor(props) {
-    super(props);
-  	this.state = {
-      video1:  {
-        "title": "Video Url 1",
-        "url": VideoLinks.TheatreReel,
-        "id": 1
-      },
-      video2: {
-        "title": "Video Url 2",
-        "url": VideoLinks.FightReel,
-        "id": 2
-      },
-      video3: {
-        "title": "Video Url 3",
-        "url": VideoLinks.FilmReel,
-        "id": 3
-      },
-        
-    };
-  }
-    
   render () {
     return (
       <Element name="Reels" className="pt-12 px-20 pd:px-32 lg:px-48 xl:px-64 bg-gradient-to-tr from-lightMid to-mid pb-12">
@@ -71,12 +50,11 @@ class Videos extends React.Component {
 				  	  </div>
 			    	</div>
 			  	</div>
-                   
        	</div>
         <Carousel autoplay={false} showStatus={false} showIndicators={false} renderItem={customRenderItem} renderThumbs={customRenderThumb}>
-          <YoutubeSlide key="youtube-1" url={this.state.video1.url} />
-          <YoutubeSlide key="youtube-2" url={this.state.video2.url} />
-          <YoutubeSlide key="youtube-3" url={this.state.video3.url} />
+          
+          <YoutubeSlide key="youtube-2" url={VideoLinks[1]} />
+          <YoutubeSlide key="youtube-3" url={VideoLinks[2]} />
         </Carousel>
       </Element>
     );

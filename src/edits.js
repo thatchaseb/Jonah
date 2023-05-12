@@ -1,17 +1,30 @@
 //Gallery Photos
 
+import pic1small from "./components/media/Gallery/1small.jpg"
 import pic1 from "./components/media/Gallery/1.jpg"
+import pic2small from "./components/media/Gallery/2small.jpg"
 import pic2 from "./components/media/Gallery/2.jpg"
+import pic3small from "./components/media/Gallery/3small.jpg"
 import pic3 from "./components/media/Gallery/3.jpg"
+import pic4small from "./components/media/Gallery/4small.jpg"
 import pic4 from "./components/media/Gallery/4.jpg"
+import pic5small from "./components/media/Gallery/5small.jpg"
 import pic5 from "./components/media/Gallery/5.jpg"
+import pic6small from "./components/media/Gallery/6small.jpg"
 import pic6 from "./components/media/Gallery/6.jpg"
+import pic7small from "./components/media/Gallery/7small.jpg"
 import pic7 from "./components/media/Gallery/7.jpg"
+import pic8small from "./components/media/Gallery/8small.jpg"
 import pic8 from "./components/media/Gallery/8.jpg"
+import pic9small from "./components/media/Gallery/9small.jpg"
 import pic9 from "./components/media/Gallery/9.jpg"
+import pic10small from "./components/media/Gallery/10small.jpg"
 import pic10 from "./components/media/Gallery/10.jpg"
+import pic11small from "./components/media/Gallery/11small.jpg"
 import pic11 from "./components/media/Gallery/11.jpg"
+import pic12small from "./components/media/Gallery/12small.jpg"
 import pic12 from "./components/media/Gallery/12.jpg"
+import pic13small from "./components/media/Gallery/13small.jpg"
 import pic13 from "./components/media/Gallery/13.jpg"
 
 //Poleroid Headers
@@ -29,19 +42,58 @@ import ContactPic from "./components/media/ContactPic.jpg"
 
 
 export const galleryPhotos = [
-  pic1,
-  pic2,
-  pic3,
-  pic4,
-  pic5,
-  pic6,
-  pic7,
-  pic8,
-  pic9,
-  pic10,
-  pic11,
-  pic12,
-  pic13,
+  { 
+    big: pic1,
+    small: pic1small,
+  },
+  { 
+    big: pic2,
+    small: pic2small,
+  },
+  { 
+    big: pic3,
+    small: pic3small,
+  },
+  { 
+    big: pic4,
+    small: pic4small,
+  },
+  { 
+    big: pic5,
+    small: pic5small,
+  },
+  { 
+    big: pic6,
+    small: pic6small,
+  },
+  { 
+    big: pic7,
+    small: pic7small,
+  },
+  { 
+    big: pic8,
+    small: pic8small,
+  },
+  { 
+    big: pic9,
+    small: pic9small,
+  },
+  { 
+    big: pic10,
+    small: pic10small,
+  },
+  { 
+    big: pic11,
+    small: pic11small,
+  },
+  { 
+    big: pic12,
+    small: pic12small,
+  },
+  { 
+    big: pic13,
+    small: pic13small,
+  },
 ]
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -56,11 +108,11 @@ export const galleryPhotos = [
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-export const VideoLinks = {
-  TheatreReel: "https://youtu.be/Sq7AE_A-C_8",
-  FilmReel: "https://youtu.be/h4wY0rwXaU4",
-  FightReel: "https://youtu.be/zXB8O5RJmXk", 
-}
+export const VideoLinks = [
+  "https://youtu.be/W8aZ28z5vPY",
+  "https://youtu.be/zXB8O5RJmXk",
+  "https://youtu.be/AggBH5e7rkI",
+]
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

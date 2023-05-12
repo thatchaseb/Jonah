@@ -53,13 +53,13 @@ const Media = () => {
     return (
       <React.Fragment key={index}>
         <div className="m-8 w-300px h-[300px]">
-					<a href={item} >
+					<a href={item.big} target="_blank" rel="noreferrer">
 					<Suspense>
 					<div //Polaroid
           	  className={polaroidClass} >
 			    	<div className='bg-gradient-to-tr relative from-gray-100 to-gray-200'>
 								{buttons[Math.floor(Math.random() * 4)]}
-				  	  <img src={item} alt="Headshot" className="bg-gradient-to-tr from-white to-gray-100 p-2 h-[300px] w-[300px] object-cover"/>
+				  	  <img src={item.small} alt="Headshot" className="bg-gradient-to-tr from-white to-gray-100 p-2 h-[300px] w-[300px] object-cover"/>
 			    	</div>
 			  	</div>
 						
