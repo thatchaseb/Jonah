@@ -53,6 +53,8 @@ class Videos extends React.Component {
           <YoutubeSlide key="youtube-1" url={VideoLinks[0]} />
           <YoutubeSlide key="youtube-2" url={VideoLinks[1]} />
           <YoutubeSlide key="youtube-3" url={VideoLinks[2]} />
+          <YoutubeSlide key="youtube-4" url={VideoLinks[3]} />
+          <YoutubeSlide key="youtube-5" url={VideoLinks[4]} />
         </Carousel>
       </Element>
     );

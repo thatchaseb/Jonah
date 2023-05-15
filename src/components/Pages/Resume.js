@@ -81,7 +81,7 @@ const Resume = () => {
 						style={{color:"#FF0000"}} 
 						target="_blank" 
 						rel="noreferrer">
-							<img className='w-8 m-1' alt='TikTok' src={tiktok}/>
+							<img className='w-8 md:w-10 m-1 md:mt-0 lg:w-12' alt='TikTok' src={tiktok}/>
 					</a>
 				</div>
 				<div className='
