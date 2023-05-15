@@ -6,15 +6,6 @@ import { Carousel } from 'react-responsive-carousel';
 
 import { PoleroidHeaders } from '../../edits';
 
-const renderedVideos = VideoLinks.map((item, index) => {
-
-  return (
-    <React.Fragment key={index}>
-      <ReactPlayer width="100%" url={item}  />
-    </React.Fragment>
-  );
-});
-
 
 const YoutubeSlide = ({ url, isSelected }) => (
     <ReactPlayer width="100%" url={url}  />
