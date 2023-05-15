@@ -8,6 +8,7 @@ import Landing from './components/Pages/Landing';
 import Videos from './components/Pages/Videos';
 import Media from './components/Pages/Media';
 import Contact from './components/Pages/Contact';
+import Music from './components/Pages/Music';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       
       <Landing />
       <Resume />
+      <Music />
       <Media />
       <Videos />
       

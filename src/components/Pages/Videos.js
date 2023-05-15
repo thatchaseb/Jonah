@@ -6,7 +6,14 @@ import { Carousel } from 'react-responsive-carousel';
 
 import { PoleroidHeaders } from '../../edits';
 
+const renderedVideos = VideoLinks.map((item, index) => {
 
+  return (
+    <React.Fragment key={index}>
+      <ReactPlayer width="100%" url={item}  />
+    </React.Fragment>
+  );
+});
 
 
 const YoutubeSlide = ({ url, isSelected }) => (
@@ -28,7 +35,7 @@ class Videos extends React.Component {
 
   render () {
     return (
-      <Element name="Reels" className="pt-12 px-20 pd:px-32 lg:px-48 xl:px-64 bg-gradient-to-tr from-lightMid to-mid pb-12">
+      <Element name="Reels" className="pt-12 px-20 pd:px-32 lg:px-48 xl:px-64 bg-gradient-to-tr from-lightMid to-mid pb-32">
         <div 
           className="
             font-Merriweather 
@@ -51,8 +58,8 @@ class Videos extends React.Component {
 			    	</div>
 			  	</div>
        	</div>
-        <Carousel autoplay={false} showStatus={false} showIndicators={false} renderItem={customRenderItem} renderThumbs={customRenderThumb}>
-          
+        <Carousel transitionTime="1000" infiniteLoop="true" autoplay={false} showStatus={false} showIndicators={false} renderItem={customRenderItem} renderThumbs={customRenderThumb}>
+          <YoutubeSlide key="youtube-1" url={VideoLinks[0]} />
           <YoutubeSlide key="youtube-2" url={VideoLinks[1]} />
           <YoutubeSlide key="youtube-3" url={VideoLinks[2]} />
         </Carousel>

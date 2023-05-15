@@ -1,6 +1,7 @@
 import React from 'react';
 import { Element } from 'react-scroll'
 import { SocialLinks, JonahBio } from '../../edits';
+import tiktok from '../media/TikTok.png'
 
 import Headshot from '../media/Gallery/4.jpg'
 
@@ -12,9 +13,9 @@ const Resume = () => {
 	<Element 
 		name="resume" 
 		className="
-			bg-no-repeat bg-cover bg-gradient-to-tr from-lightMid to-mid
+			bg-no-repeat bg-cover bg-gradient-to-br from-lightMid to-mid
 			object-right
-			pb-8
+			pb-1
 			mb-0
 			
 			pt-20
@@ -75,6 +76,13 @@ const Resume = () => {
 					>					
 						<i className="youtube icon" style={{color:"#FF0000"}}></i>
 					</a>
+					<a 
+						href={SocialLinks.TikTok} 
+						style={{color:"#FF0000"}} 
+						target="_blank" 
+						rel="noreferrer">
+							<img className='w-8 m-1' alt='TikTok' src={tiktok}/>
+					</a>
 				</div>
 				<div className='
 					text-[1.5rem] lg:text-3xl relative rotate-1 md:mx-20 lg:mx-64 lg:my-32 mx-4
@@ -133,7 +141,7 @@ const Resume = () => {
 		</a>
 	</div>
 		
-	<div className='mb-32 flex justify-center'>
+	<div className='flex justify-center'>
 		<a href={RM} className="
 			bg-gray-100 		
 			font-Merriweather 
