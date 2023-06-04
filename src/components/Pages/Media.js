@@ -52,14 +52,14 @@ const Media = () => {
 
     return (
       <React.Fragment key={index}>
-        <div className="m-8 w-300px h-[300px]">
+        <div className="my-16 lg:w-[500px] md:w-[350px] w-[300px] lg:h-[500px] md:h-[350px] h-[300px] mx-auto">
 					<a href={item.big} target="_blank" rel="noreferrer">
 					<Suspense>
 					<div //Polaroid
           	  className={polaroidClass} >
 			    	<div className='bg-gradient-to-tr relative from-gray-100 to-gray-200'>
 								{buttons[Math.floor(Math.random() * 4)]}
-				  	  <img src={item.small} alt="Headshot" className="bg-gradient-to-tr from-white to-gray-100 p-2 h-[300px] w-[300px] object-cover"/>
+				  	  <img src={item.small} alt="Headshot" className="bg-gradient-to-tr from-white to-gray-100 p-2 lg:w-[500px] md:w-[350px] w-[300px] lg:h-[500px] md:h-[350px] h-[300px] object-cover"/>
 			    	</div>
 			  	</div>
 						
@@ -71,15 +71,15 @@ const Media = () => {
     );
   });
 
-	const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
+	const isMobile = useMediaQuery({ query: `(max-width: 625px)` });
 
 
   return (
 	<Element 
 		name="media" 
 		class="
-			pb-12
-			pt-0
+			pb-1
+			pt-8
 			bg-gradient-to-br from-lightMid to-mid
 	">
 		<div 

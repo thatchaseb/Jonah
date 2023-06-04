@@ -13,12 +13,9 @@ const Resume = () => {
 	<Element 
 		name="resume" 
 		className="
-			bg-no-repeat bg-cover bg-gradient-to-br from-lightMid to-mid
+			bg-no-repeat bg-cover bg-gradient-to-tr from-lightMid to-mid
 			object-right
 			pb-1
-			mb-0
-			
-			pt-20
 		"
 	>
 		<div>
@@ -85,7 +82,7 @@ const Resume = () => {
 					</a>
 				</div>
 				<div className='
-					text-[1.5rem] lg:text-3xl relative rotate-1 md:mx-20 lg:mx-64 lg:my-32 mx-4
+					text-[1.5rem] lg:text-3xl relative rotate-1 md:mx-20 lg:mx-64 lg:my-32 mx-4 xl:mx-[25rem]
 					my-12 p-8 bg-slate-100 text-Darker border-4 border-solid border-t-slate-200 border-l-slate-200 border-b-slate-300 border-r-slate-300
 				'>
 					<div // Green Button
@@ -106,9 +103,13 @@ const Resume = () => {
 				select-none 
 				flex 
 				justify-center
-				w-3/4
+				w-full
+				sm:w-3/4
+				xl:w-1/2
 				border-8 border-sec-500 rounded-md 
 				bg-black 
+				m-4
+				sm:m-0
 				mb-16
 				relative
 				
@@ -148,8 +149,9 @@ const Resume = () => {
 			text-navy				hover:text-mid 
 			border-4	border-gray-100
 			lg:text-2xl
-			mb-32
-
+			mt-0
+			sm:mt-8
+			mb-8
 			px-5		py-3 		
 			rounded 
 			hover:bg-lightMid 

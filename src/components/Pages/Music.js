@@ -14,7 +14,7 @@ const MusicRerendered = Music.map((item, index) => {
     <React.Fragment key={index}>
       <div className='sm:bg-gray-100 sm:rounded-lg sm:border-16 sm:border-gray-100 '>
           
-          <div className='text-3xl sm:pt-8 py-4 sm:my-0 my-4 sm:bg-transparent bg-gray-100'>
+          <div className='text-3xl text-darkMid sm:pt-8 py-4 sm:my-0 my-4 sm:bg-transparent bg-Lighter'>
             {item.Name}
           </div>
 
@@ -77,7 +77,7 @@ class Videos extends React.Component {
 
   render () {
     return (
-      <Element name="music" className="pt-1 sm:px-20 pd:px-32 lg:px-48 xl:px-64 bg-gradient-to-tr from-lightMid to-mid pb-48">
+      <Element name="music" className="pt-1 sm:px-20 pd:px-32 lg:px-48 xl:px-64 bg-gradient-to-br from-lightMid to-mid pb-8">
         <div 
           className="
             font-Merriweather 
@@ -103,7 +103,7 @@ class Videos extends React.Component {
         <Carousel showStatus={false} autoPlay="true" transitionTime="500" interval="5000" stopOnHover="true" infiniteLoop="true" >
         <div className='sm:bg-gray-100 sm:rounded-lg sm:border-16 sm:border-gray-100'>
           
-          <div className='text-3xl sm:pt-8 py-4 sm:my-0 my-4 sm:bg-transparent bg-gray-100'>
+          <div className='text-3xl sm:pt-8 py-4 sm:my-0 my-4 sm:bg-transparent bg-Lighter text-darkMid'>
             {MainVideo.Name}
           </div>
 

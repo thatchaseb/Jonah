@@ -26,12 +26,13 @@ class Videos extends React.Component {
 
   render () {
     return (
-      <Element name="Reels" className="pt-12 px-20 pd:px-32 lg:px-48 xl:px-64 bg-gradient-to-tr from-lightMid to-mid pb-32">
+      <Element name="Reels" className="pt-4 px-2 sm:px-20 md:px-32 lg:px-64 xl:px-[25rem] bg-gradient-to-tr from-lightMid to-mid pb-8">
         <div 
           className="
             font-Merriweather 
             text-[4rem] lg:text-[5rem]
-            my-16 
+            mt-4 
+            mb-16
             text-navy
           "
         >

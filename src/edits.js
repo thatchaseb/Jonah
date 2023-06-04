@@ -223,6 +223,11 @@ export const Music = [
     Spotify: "https://open.spotify.com/track/6O6SrtA8UaEi8NOzhDwNJi?si=188b6f3cade94662",
     AppleMusic: "https://music.apple.com/us/album/just-look-at-me/1653272229?i=1653272230"
   },
+  {
+    Name: "Just Look at Me",
+    Spotify: "https://open.spotify.com/track/6O6SrtA8UaEi8NOzhDwNJi?si=188b6f3cade94662",
+    AppleMusic: "https://music.apple.com/us/album/just-look-at-me/1653272229?i=1653272230"
+  },
 
 ]
 

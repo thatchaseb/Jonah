@@ -17,8 +17,9 @@ function App() {
       <Header />
       
       <Landing />
-      <Resume />
       <Music />
+      <Resume />
+      
       <Media />
       <Videos />
       
