@@ -16,6 +16,7 @@ const Resume = () => {
 			bg-no-repeat bg-cover bg-gradient-to-tr from-lightMid to-mid
 			object-right
 			pb-1
+			pt-20
 		"
 	>
 		<div>

@@ -18,13 +18,13 @@ const Contact = () => {
   const form = useRef();
 
   return (
-    <Element name="contact" className="p-6 text-navy bg-gradient-to-br from-lightMid to-mid">
+    <Element name="contact" className="p-6 text-navy bg-gradient-to-tr from-lightMid to-mid">
     <div class="md:w-3/4 md:mx-auto">
     <div 
       class="
         font-Merriweather 
         text-[4rem] lg:text-[5rem] 
-        my-8 
+        mb-8 
         text-navy
       "
     >

@@ -17,13 +17,12 @@ function App() {
       <Header />
       
       <Landing />
-      <Music />
       <Resume />
-      
       <Media />
       <Videos />
-      
-      <Contact /> 
+      <Music />
+      <Contact />
+
       <Footer />
 
       
