@@ -29,8 +29,8 @@ const Resume = () => {
 				justify-center'>
 					<div className='rotate-2  bg-gradient-to-tr from-gray-100 to-gray-200'>
 
-						<div // Blue Button
-							className='rotate-45 h-8 w-8 border-2 border-solid border-x-blue-800 border-t-blue-800 border-b-blue-900 bg-blue-600 rounded-[50%] absolute left-1/2 top-[-15px]'>
+						<div // gray Button
+							className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-600 rounded-[50%] absolute left-1/2 top-[-15px]'>
 							<div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
 						</div>
 						
