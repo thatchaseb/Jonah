@@ -10,14 +10,14 @@ import RMJPG from "../media/Resume.jpg"
 
 const Resume = () => {
 	return (
-	<Element 
-		name="resume" 
-		className="
-			bg-no-repeat bg-cover bg-gradient-to-tr from-lightMid to-mid
-			object-right
-			pb-1
-			pt-20
-		"
+		<div className="
+		bg-no-repeat bg-cover bg-gradient-to-tr from-lightMid to-mid
+		object-right
+		pb-1
+		pt-20
+	">
+			<Element 
+		name="about" 
 	>
 		<div>
 			<div className="
@@ -30,7 +30,7 @@ const Resume = () => {
 					<div className='rotate-2  bg-gradient-to-tr from-gray-100 to-gray-200'>
 
 						<div // gray Button
-							className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-600 rounded-[50%] absolute left-1/2 top-[-15px]'>
+							className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-800 rounded-[50%] absolute left-1/2 top-[-15px]'>
 							<div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
 						</div>
 						
@@ -86,8 +86,8 @@ const Resume = () => {
 					text-[1.5rem] lg:text-3xl relative rotate-1 md:mx-20 lg:mx-64 lg:my-32 mx-4 xl:mx-[25rem]
 					my-12 p-8 bg-slate-100 text-Darker border-4 border-solid border-t-slate-200 border-l-slate-200 border-b-slate-300 border-r-slate-300
 				'>
-					<div // Green Button
-						 className='rotate-45 h-8 w-8 border-2 border-solid border-x-green-800 border-t-green-800 border-b-green-900 bg-green-600 rounded-[50%] absolute left-1/2 top-[-15px]'>
+					<div // gray Button
+						 className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-900 border-t-gray-800 border-b-gray-900 bg-gray-800 rounded-[50%] absolute left-1/2 top-[-15px]'>
 						<div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
 					</div>
 
@@ -96,6 +96,12 @@ const Resume = () => {
 				
 			</div>
 		</div>
+		</Element>
+		<Element
+		name="resume" 
+		>
+
+		
 		<div className='flex justify-center relitive'>
 			
 		<a 
@@ -118,13 +124,13 @@ const Resume = () => {
 			target="_blank" 
 			rel="noreferrer"
 		>
-				<div // Yellow Button
-						className='rotate-45 h-8 w-8 border-2 border-solid border-x-yellow-800 border-t-yellow-800 border-b-yellow-900 bg-yellow-600 rounded-[50%] absolute left-[10%] z-10 top-[-20px]'>
+				<div // gray Button
+						className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-800 rounded-[50%] absolute left-[10%] z-10 top-[-20px]'>
 					<div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
 				</div>
 
-				<div // yellow Button
-						className='rotate-45 h-8 w-8 border-2 border-solid border-x-yellow-800 border-t-yellow-800 border-b-yellow-900 bg-yellow-600 rounded-[50%] absolute right-[15%] z-10 top-[-18px]'>
+				<div // gray Button
+						className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-800 rounded-[50%] absolute right-[15%] z-10 top-[-18px]'>
 					<div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
 				</div>
 
@@ -165,6 +171,8 @@ const Resume = () => {
 	</div>
 		
 	</Element>
+	</div>
+	
 	);
 };
 

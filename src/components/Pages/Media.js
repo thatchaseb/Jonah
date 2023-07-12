@@ -14,25 +14,25 @@ const Media = () => {
 	const buttons = [
 		<React.Fragment>
 			<div // gray Button
-				  className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-600 rounded-[50%] absolute left-1/2 top-[-15px]'>
+				  className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-800 rounded-[50%] absolute left-1/2 top-[-15px]'>
 				<div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
 			 </div>
 		</React.Fragment>,
 		<React.Fragment>
 			<div // gray Button
-					className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-600 rounded-[50%] absolute left-1/2 top-[-15px]'>
+					className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-800 rounded-[50%] absolute left-1/2 top-[-15px]'>
 				<div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
 			</div>
 		</React.Fragment>,
 		<React.Fragment>
 			<div // gray Button
-					className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-600 rounded-[50%] absolute left-1/2 top-[-15px]'>
+					className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-800 rounded-[50%] absolute left-1/2 top-[-15px]'>
 				<div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
 			</div>
 		</React.Fragment>,
 		<React.Fragment>
 			<div // gray Button
-					className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-600 rounded-[50%] absolute left-1/2 top-[-15px]'>
+					className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-800 rounded-[50%] absolute left-1/2 top-[-15px]'>
 				<div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
 			</div>
 		</React.Fragment>,
@@ -52,7 +52,7 @@ const Media = () => {
 
     return (
       <React.Fragment key={index}>
-        <div className="my-16 lg:w-[500px] md:w-[350px] w-[300px] lg:h-[500px] md:h-[350px] h-[300px] mx-auto">
+        <div className="my-16 lg:w-[550px] md:w-[400px] w-[350px] lg:h-[450px] md:h-[350px] h-[300px] mx-auto">
 					<a href={item.big} target="_blank" rel="noreferrer">
 					<Suspense>
 					<div //Polaroid
@@ -95,7 +95,7 @@ const Media = () => {
           	  className='flex justify-center rotate-2'>
 			    	<div className='bg-gradient-to-tr relative from-gray-100 to-gray-200'>
  	        	  <div // yellow Button
-							    className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-600 rounded-[50%] absolute left-1/2 top-[-15px]'>
+							    className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-800 rounded-[50%] absolute left-1/2 top-[-15px]'>
 						    <div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
 				  	  </div>
 				  	  <img src={PoleroidHeaders[1]} alt="Headshot" className="bg-gradient-to-tr from-white to-gray-100 p-2 w-80 h-80  object-cover"/>

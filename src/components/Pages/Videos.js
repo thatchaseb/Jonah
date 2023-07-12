@@ -1,32 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
 import { VideoLinks } from '../../edits';
 import { Element } from 'react-scroll'
-import { Carousel } from 'react-responsive-carousel';
 
 import { PoleroidHeaders } from '../../edits';
 
 
-const YoutubeSlide = ({ url, isSelected }) => (
-    <ReactPlayer width="100%" url={url}  />
-);
-const customRenderItem = (item, props) => <item.type {...item.props} {...props} />;
+const Videos = () => {
 
-const getVideoThumb = (videoId) => `https://img.youtube.com/vi/${videoId}/default.jpg`;
+  const [activeVideo, setActiveVideo] = useState(0);
 
-const getVideoId = (url) => url.substr('https://youtu.be/'.length, url.length);
+  const onThumbClick = (index) => {
+    setActiveVideo(index);
+  };
 
-const customRenderThumb = (children) =>
-  children.map((item) => {
-    const videoId = getVideoId(item.props.url);
-    return <img alt="Thumbnail" src={getVideoThumb(videoId)} />;
-  });
-
-class Videos extends React.Component {
-
-  render () {
     return (
-      <Element name="Reels" className="pt-4 px-2 sm:px-20 md:px-32 lg:px-64 xl:px-[25rem] bg-gradient-to-tr from-lightMid to-mid pb-8">
+      <Element name="Reels" className="pt-4 px-4 sm:px-16  bg-gradient-to-tr from-lightMid to-mid pb-8">
         <div 
           className="
             font-Merriweather 
@@ -40,26 +29,34 @@ class Videos extends React.Component {
           	  className='flex justify-center -rotate-2'>
 			    	<div className='bg-gradient-to-tr relative from-gray-100 to-gray-200'>
  	        	  <div // gray Button
-							    className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-600 rounded-[50%] absolute left-1/2 top-[-15px]'>
+							    className='rotate-45 h-8 w-8 border-2 border-solid border-x-gray-800 border-t-gray-800 border-b-gray-900 bg-gray-800 rounded-[50%] absolute left-1/2 top-[-15px]'>
 						    <div className=' h-4 w-[19px] ml-[3px] border-t-2 border-solid border-t-white-200 rounded-[50%]'></div>
 				  	  </div>
 				  	  <img src={PoleroidHeaders[3]} alt="PoleroidHeaders" className="bg-gradient-to-tr from-white to-gray-100 p-2 w-80 h-80  object-cover"/>
 				  	  <div className='font-ShadowsIntoLight text-mid text-[3rem] text-center'>
-						    Videos
-				  	  </div>
+						    Videos 
+  	          </div>
 			    	</div>
 			  	</div>
        	</div>
-        <Carousel transitionTime="1000" infiniteLoop="true" autoplay={false} showStatus={false} showIndicators={false} renderItem={customRenderItem} renderThumbs={customRenderThumb}>
-          <YoutubeSlide key="youtube-1" url={VideoLinks[0]} />
-          <YoutubeSlide key="youtube-2" url={VideoLinks[1]} />
-          <YoutubeSlide key="youtube-3" url={VideoLinks[2]} />
-          <YoutubeSlide key="youtube-4" url={VideoLinks[3]} />
-          <YoutubeSlide key="youtube-5" url={VideoLinks[4]} />
-        </Carousel>
+        <div className='py-8'>
+          <span><ReactPlayer className="border-white border-solid border-4 sm:hidden mx-auto" width="320px" height="180px" url={VideoLinks[activeVideo]}/></span>
+          <span><ReactPlayer className="border-white border-solid border-8 md:hidden sm:block hidden mx-auto" width="480px" height="270px" url={VideoLinks[activeVideo]}/></span>
+          <span><ReactPlayer className="border-white border-solid border-8 lg:hidden md:block hidden mx-auto" width="640px" height="360px" url={VideoLinks[activeVideo]}/></span>
+          <span><ReactPlayer className="border-white border-solid border-8 lg:block hidden mx-auto" width="880px" height="495px" url={VideoLinks[activeVideo]}/></span>
+        </div>
+        <div className="grid grid-cols-5 gap-4 pb-8">
+        <img className='w-[140px] h-[60px] sm:h-[80px] object-cover cursor-pointer border-4 hover:border-Darker border-white border-solid rounded-lg' onClick={() => onThumbClick(0)} alt="Thumbnail" src={`https://img.youtube.com/vi/${VideoLinks[0].substr('https://youtu.be/'.length, VideoLinks[0].length)}/default.jpg`} />
+        <img className='w-[140px] h-[60px] sm:h-[80px] object-cover cursor-pointer border-4 hover:border-Darker border-white border-solid rounded-lg' onClick={() => onThumbClick(1)} alt="Thumbnail" src={`https://img.youtube.com/vi/${VideoLinks[1].substr('https://youtu.be/'.length, VideoLinks[1].length)}/default.jpg`} />
+        <img className='w-[140px] h-[60px] sm:h-[80px] object-cover cursor-pointer border-4 hover:border-Darker border-white border-solid rounded-lg' onClick={() => onThumbClick(2)} alt="Thumbnail" src={`https://img.youtube.com/vi/${VideoLinks[2].substr('https://youtu.be/'.length, VideoLinks[2].length)}/default.jpg`} />
+        <img className='w-[140px] h-[60px] sm:h-[80px] object-cover cursor-pointer border-4 hover:border-Darker border-white border-solid rounded-lg' onClick={() => onThumbClick(3)} alt="Thumbnail" src={`https://img.youtube.com/vi/${VideoLinks[3].substr('https://youtu.be/'.length, VideoLinks[3].length)}/default.jpg`} />
+        <img className='w-[140px] h-[60px] sm:h-[80px] object-cover cursor-pointer border-4 hover:border-Darker border-white border-solid rounded-lg' onClick={() => onThumbClick(4)} alt="Thumbnail" src={`https://img.youtube.com/vi/${VideoLinks[4].substr('https://youtu.be/'.length, VideoLinks[4].length)}/default.jpg`} />
+
+        </div>
+
+        
       </Element>
     );
   }
-};
 
 export default Videos;
