@@ -57,10 +57,14 @@ Just add a new photo in the `Gallery` folder.
 Add a second version of the photo with "small" at the end 
 Make sure the gallery photo is only 300px x 300px resolution
 
+  `Use the site https://squoosh.app/ (click resize, uncheck "maintain aspect ratio",
+  Change Fit method to contain, then change height and width to 300)`
+
 Then follow the instructions in the edits.js document!
+
+To delete files click the `...` button then click delete button at the bottom!
 
 ## Contact
 If you get stuck or lost don't hesitate to reach out with questions!
 
-Phone: 706-290-3045
 Email: BrackettWebsiteDesign@gmail.com
