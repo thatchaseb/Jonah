@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_osnu0gu', 'template_z9rstoo', form.current, 'RCeqM3ZWKBuVE8nW7')
+    emailjs.sendForm('service_osnu0gu', 'template_z9rstoo', form.current, 'SBILMCBkyxBnv5HoF')
     .then((result) => {
         console.log(result.text);
         }, (error) => {console.log(error.text)}
