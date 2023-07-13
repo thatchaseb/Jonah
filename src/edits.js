@@ -240,9 +240,9 @@ export const Music = [
 Just Edit the Bio text below!
 Do not include your name it will be added automatically
 
-*/////////////////////////////////////////////
-export const JonahBio = //////////////////////
-//////////////////////////////////////////////
+*////////////////////////////////////////////
+export const JonahBio = /////////////////////
+/////////////////////////////////////////////
 `
 
 is from Lawrenceville, GA with a Bachelors of Arts in Theatre and a minor in Film Studies from Florida State University. He is an actor, musician, and filmmaker currently based in Tallahassee, FL.
