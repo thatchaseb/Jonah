@@ -155,8 +155,8 @@ export const VideoLinks = [/////
 //    Paste Below Me          //
 ////////////////////////////////
 
-  "https://youtu.be/_1aULSPseOs?si=ttAjv1H9J20E-YLy",
-  "https://youtu.be/h4wY0rwXaU4?si=V3Q0p1vYZH3-gRqa",
+  "https://youtu.be/_1aULSPseOs",
+  "https://youtu.be/h4wY0rwXaU4",
   "https://youtu.be/zXB8O5RJmXk",
   "https://youtu.be/Kq4dTvml7Lk",
   "https://youtu.be/72kaICwNmhM",
