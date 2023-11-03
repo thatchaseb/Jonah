@@ -223,7 +223,7 @@ export const MainVideo = {//
 export const Music = [ 
   {
     Name: "Don't Spiral",
-    Spotify: "https://open.spotify.com/album/48sKbWYNqg9sD5EXAAWeRz?si=c0zHoks0SY-iM7Whi2OArQ",
+    Spotify: "https://open.spotify.com/album/48sKbWYNqg9sD5EXAAWeRz?si=qdLWS1fPSAOJ7xUPTjh9GQ",
     AppleMusic: "https://music.apple.com/us/album/dont-spiral/1711833777"
   },
   {
