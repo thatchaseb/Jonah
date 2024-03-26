@@ -246,7 +246,7 @@ export const JonahBio = /////////////////////
 /////////////////////////////////////////////
 `
 
-is from Lawrenceville, GA with a Bachelors of Arts in Theatre and a minor in Film Studies from Florida State University. He is an actor, musician, and filmmaker currently based in Tallahassee, FL currently performing in the national tour of Superfreak: the Rick James Story.
+is from Lawrenceville, GA with a Bachelors of Arts in Theatre and a minor in Film Studies from Florida State University. He is an actor, musician, and filmmaker currently performing in the national tour of Superfreak: the Rick James Story.
 
 `
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
