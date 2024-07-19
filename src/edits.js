@@ -223,8 +223,8 @@ export const MainVideo = {//
 export const Music = [ 
   {
     Name: "Don't Spiral",
-    Spotify: "https://open.spotify.com/album/48sKbWYNqg9sD5EXAAWeRz?si=wsDSu3RRSiewgWdOAzLuEw",
-    AppleMusic: "https://music.apple.com/us/album/dont-spiral/1711833777"
+    Spotify: "https://open.spotify.com/track/1qJzmqH8YEmbtblA5P5G16?si=20b6f6046a0644ca",
+    AppleMusic: "https://music.apple.com/us/album/just-look-at-me/1711833777?i=1711833779"
   },
   {
     Name: "Just Look at Me",
