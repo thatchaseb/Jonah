@@ -223,7 +223,7 @@ export const MainVideo = {//
 export const Music = [ 
   {
     Name: "Don't Spiral",
-    Spotify: "https://open.spotify.com/album/48sKbWYNqg9sD5EXAAWeRz?si=_MePgODoRpeHX7Z4OvRo0Q",
+    Spotify: "https://open.spotify.com/album/48sKbWYNqg9sD5EXAAWeRz?si=wsDSu3RRSiewgWdOAzLuEw",
     AppleMusic: "https://music.apple.com/us/album/dont-spiral/1711833777"
   },
   {
@@ -246,7 +246,7 @@ export const JonahBio = /////////////////////
 /////////////////////////////////////////////
 `
 
-is from Lawrenceville, GA with a Bachelors of Arts in Theatre and a minor in Film Studies from Florida State University. He is an actor, musician, and filmmaker currently performing in the national tour of Superfreak: the Rick James Story.
+is an Atlanta-based actor from Lawrenceville, GA with a Bachelors of Arts in Theatre and a minor in Film Studies from Florida State University. He is an actor, musician, and filmmaker with growing popularity on YouTube for his music and joyful personality.
 
 `
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
